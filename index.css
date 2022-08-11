@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  border-radius: 10px;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 10%;
+  max-height: 10%;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-group {
+  display: flex;
+  align-items: center;
+}
+.home-group i {
+  font-size: 30px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  color: black;
+  font-family: "League Gothic";
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 3vw;
+  height: 3vw;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  padding-right: 10px;
+  width: 40vw;
+}
+
+.search-bar input {
+  width: 37vw;
+  height: 45px;
+  min-width: 90px;
+  padding-left: 15px;
+  border: 1px lightgray solid;
+  border-right: none;
+}
+.search-button {
+  width: 3vw;
+  min-width: 40px;
+  background-color: #f9f9f9;
+  border: 1px lightgray solid;
+  padding: 6px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #f9f9f965;
+}
+
+.search-button i {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #f9f9f9ea;
+  border: none;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons i {
+  font-size: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.nav-bar {
+  position: sticky;
+  top: 0%;
+  height: 100%;
+  width: 15%;
+  min-width: 200px;
+  background-color: white;
+  overflow-y: hidden;
+}
+.nav-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-bottom: 1px lightgray solid;
+}
+.nav-element {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.nav-element:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.nav-element i {
+  padding: 0px 20px 0px 0px;
+  font-size: 26px;
+}
+
+.nav-element span {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.row {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+}
+
+.video-thumbnail {
+  width: 270px;
+  height: 150px;
+}
+
+.video-info {
+  display: flex;
+  padding-top: 8px;
+  width: 270px;
+}
+
+.video-channel {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.video-title {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
